@@ -8,13 +8,3 @@ export type UserForm = {
         city: string;
     },
 }
-
-export type SolarTermalHeathingForm = UserForm & {
-    surfaceArea: number;
-    numberOfPeople: number;
-}
-
-export type HeatPumpForm = UserForm & {
-    surfaceArea: number;
-    numberOfPeople: number;
-}
