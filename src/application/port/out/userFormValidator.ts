@@ -1,6 +1,6 @@
 import {UserForm} from "../../../domain/forms";
 
-type ValidationResult = {
+export type ValidationResult = {
     success: true;
 } | {
     success: false;
@@ -10,6 +10,6 @@ type ValidationResult = {
     }
 }
 
-export default interface userFormValidator {
+export default interface UserFormValidator {
     validate(userForm: UserForm): Promise<ValidationResult>;
 }
