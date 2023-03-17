@@ -49,4 +49,4 @@ Ideally this project would have test coverage (unit and integration), linting, t
 
 # Overall explanation
 As one of the requirements is `keep in mind that this system needs to be built for scale` I decided to opt here for the hexagonal architecture.
-This means, today the endpoints works with Express and Postgres, but in the future we could easily change the framework or the database without affecting the core business logic.
+This means, today the endpoints works with Express and Postgres , but in the future we could easily change the framework or the database (adapters) without affecting the core business logic (Application useCase).
