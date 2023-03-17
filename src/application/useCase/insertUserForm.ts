@@ -3,7 +3,7 @@ import formInserter from "../port/out/insertUserForm";
 import {UserForm} from "../../domain/forms";
 import FormValidator from "../port/out/userFormValidator";
 
-export default class InsertUserFormUserCase implements UserCaseInterface {
+export default class InsertUserFormUseCase implements UserCaseInterface {
 
     constructor(private formInserter: formInserter, private formValidator: FormValidator) {
     }
