@@ -1,6 +1,6 @@
 import {UserForm} from "../../../domain/forms";
 
-export type InsertFormOperationResult = {
+type ValidationResult = {
     success: true;
 } | {
     success: false;
@@ -10,6 +10,6 @@ export type InsertFormOperationResult = {
     }
 }
 
-export default interface InsertUserForm {
-    insertUserForm(userForm: UserForm): Promise<InsertFormOperationResult>;
+export default interface userFormValidator {
+    validate(userForm: UserForm): Promise<ValidationResult>;
 }

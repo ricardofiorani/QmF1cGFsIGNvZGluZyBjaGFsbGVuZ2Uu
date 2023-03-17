@@ -7,6 +7,6 @@ type InsertFormOperationResult = {
     error: string;
 }
 
-export default interface InsertUserForm {
+export default interface insertUserForm {
     insertUserForm(userForm: UserForm): Promise<InsertFormOperationResult>;
 }
